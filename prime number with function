@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+void prime(int n) // function to find out prime number
+{
+int last=n;
+int ctr,w,i;
+for(i=0; i<=last; i++)
+	{
+		ctr=0;
+		for(w=2; w<i; w++)
+		{
+			if(i%w==0)
+			{
+				ctr++;
+				break;
+			}
+		}
+		if(ctr==0)
+			printf("%d ",i);
+		{
+		}
+	}
+
+}
+
+int main()
+{
+     int n;
+    printf(" enter the number upto which prime number needs to displayed "); // asks user to input value of n
+    scanf("%d",&n);
+    prime(n); // calls function
+    return 0;
+}
